@@ -1,4 +1,4 @@
-use crate::request::Resp;
+// use crate::request::Resp;
 use crate::types::Payment;
 use crate::types::{
     ListPaymentResponse, Payer, PaymentIntent, PaymentMethod, RedirectUrls, RequestNewPayment,

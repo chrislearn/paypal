@@ -1,4 +1,4 @@
-#![deny(missing_docs)]
+// #![deny(missing_docs)]
 
 //! A crate that serves to abstract away the network aspect of interfacing with paypal.
 //! Created by nikos
@@ -21,27 +21,27 @@
 //! ```
 
 /// Possible ways that a paypal request can fail
-pub mod error;
-mod payment;
-mod request;
-mod token;
+// pub mod error;
+// mod payment;
+// mod request;
+// mod token;
 
 mod types;
 
-pub use payment::*;
-pub use token::get_token;
+// pub use payment::*;
+// pub use token::get_token;
 pub use types::{
     Address, ApplicationContext, CreditCard, CreditCardToken, FailureReason, FundingInstrument,
     LinkDescription, ListPaymentResponse, NormalizationStatus, Payer, PayerStatus, Payment,
     PaymentIntent, PaymentMethod, RedirectUrls, State, Transaction, TransactionAmount, ResponseAccessToken,
 };
 
-#[cfg(feature = "test-mode")]
-const _ADDR: &str = "https://api.sandbox.paypal.com";
+// #[cfg(feature = "test-mode")]
+// const _ADDR: &str = "https://api.sandbox.paypal.com";
 
-#[cfg(not(feature = "test-mode"))]
-const _ADDR: &str = "https://api.paypal.com";
+// #[cfg(not(feature = "test-mode"))]
+// const _ADDR: &str = "https://api.paypal.com";
 
-fn _make_endpoint(ep: &str) -> String {
-    format!("{}{}", _ADDR, ep)
-}
+// fn _make_endpoint(ep: &str) -> String {
+//     format!("{}{}", _ADDR, ep)
+// }
