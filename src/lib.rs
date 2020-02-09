@@ -33,7 +33,7 @@ pub use token::get_token;
 pub use types::{
     Address, ApplicationContext, CreditCard, CreditCardToken, FailureReason, FundingInstrument,
     LinkDescription, ListPaymentResponse, NormalizationStatus, Payer, PayerStatus, Payment,
-    PaymentIntent, PaymentMethod, RedirectUrls, State, Transaction, TransactionAmount,
+    PaymentIntent, PaymentMethod, RedirectUrls, State, Transaction, TransactionAmount, ResponseAccessToken,
 };
 
 #[cfg(feature = "test-mode")]
